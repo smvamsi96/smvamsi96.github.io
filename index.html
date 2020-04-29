@@ -5,19 +5,28 @@ layout: default
 
 <h2 style="text-align: center">All Collections</h2>
 
-<div class="row row-cols-1 row-cols-md-3">
+<div class="row row-cols-1 row-cols-md-2">
+{% for field in site.fields %}
 
-<a href="/prehacking/"><div class="col mb-4">
-<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Pre-Hacking</h5>
-<p class="card-text">is everything that's interesting and wonderful about a Computer.</p>
-</div>
-</div>
-</div>
-</a>
 
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{ field.field }}</h5>
+    <p class="card-text">{{ field.content | markdownify }}</p>
+	<a href="#"><button type="button" class="btn btn-info">Info</button></a>
+    
+	<a href="#"><button type="button" class="btn btn-danger">View</button></a>
+    
+  </div>
+</div>
+
+{% endfor %}
+</div>
+
+
+
+
+<!--
 <a href="/"><div class="col mb-4">
 <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
 <div class="card-header"></div>
@@ -45,7 +54,12 @@ layout: default
 </div>
 </div>
 </div>
-<!--
+
+
+
+
+
+
 <div class="col mb-4">
 <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
 <div class="card-header"></div>
@@ -82,5 +96,5 @@ layout: default
 </div>
 </div>
 </div>
--->
 </div>
+-->
