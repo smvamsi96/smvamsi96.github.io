@@ -1,100 +1,716 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feynman</title>
 
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-<h2 style="text-align: center">All Collections</h2>
-
-<div class="row row-cols-1 row-cols-md-2">
-{% for field in site.fields %}
-
-
-<div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">{{ field.field }}</h5>
-    <p class="card-text">{{ field.content | markdownify }}</p>
-	<a href="#"><button type="button" class="btn btn-info">Info</button></a>
     
-	<a href="#"><button type="button" class="btn btn-danger">View</button></a>
+    <meta name="description" content="I’m trying something new." />
+    <meta property="og:description" content="I’m trying something new." />
     
-  </div>
-</div>
+    <meta name="author" content="Feynman" />
 
-{% endfor %}
-</div>
+    
+    <meta property="og:title" content="Memory Hooks" />
+    <meta property="twitter:title" content="Memory Hooks" />
+    
 
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Feynman" href="/feed.xml" />
 
+  </head>
 
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://github.com/smvamsi96/dickie-moser/raw/master/images/dickie-moser.png" /></a>
 
-<!--
-<a href="/"><div class="col mb-4">
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Hacking</h5>
-<p class="card-text">is about being Curious about this fascinating world around us.</p>
-</div>
-</div>
-</div></a>
-<div class="col mb-4">
-<div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Math</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-</div>
-</div>
-<div class="col mb-4">
-<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Engineering</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-</div>
-</div>
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Feynman</a></h1>
+            <p class="site-description">an alias</p>
+          </div>
 
 
+          <nav>
+            <a href="/">
+			<button type="button" class="btn btn-outline-success">Blog</button></a>
+
+            <a href="/about"><button type="button" class="btn btn-outline-info">About</button></a>
+          </nav>
+
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+	<h1>Memory Hooks</h1>
+
+	<div class="entry">
+		<p>I’m trying something new.</p>
+
+	</div>
+
+	<div class="hooks-table">
+		<table class="table table-hover">
+			<thead>
+				<tr class="bg-warning">
+					<th scope="col">NUM</th>
+					<th scope="col">H00K</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+					<tr>
+						<td>1</td>
+						<td>Rocket</td>
+					</tr>
+					
+				
+					<tr>
+						<td>2</td>
+						<td>Jlaw</td>
+					</tr>
+					
+				
+					<tr>
+						<td>3</td>
+						<td>remy</td>
+					</tr>
+					
+				
+					<tr>
+						<td>4</td>
+						<td>bat</td>
+					</tr>
+					
+				
+					<tr>
+						<td>5</td>
+						<td>ball</td>
+					</tr>
+					
+				
+					<tr>
+						<td>6</td>
+						<td>rose</td>
+					</tr>
+					
+				
+					<tr>
+						<td>7</td>
+						<td>yellow-flowers</td>
+					</tr>
+					
+				
+					<tr>
+						<td>8</td>
+						<td>raj</td>
+					</tr>
+					
+				
+					<tr>
+						<td>9</td>
+						<td>rope</td>
+					</tr>
+					
+				
+					<tr>
+						<td>10</td>
+						<td>tree</td>
+					</tr>
+					
+				
+					<tr>
+						<td>11</td>
+						<td>TED</td>
+					</tr>
+					
+				
+					<tr>
+						<td>12</td>
+						<td>tiny</td>
+					</tr>
+					
+				
+					<tr>
+						<td>13</td>
+						<td>tom</td>
+					</tr>
+					
+				
+					<tr>
+						<td>14</td>
+						<td>rain</td>
+					</tr>
+					
+				
+					<tr>
+						<td>15</td>
+						<td>tool</td>
+					</tr>
+					
+				
+					<tr>
+						<td>16</td>
+						<td>bum</td>
+					</tr>
+					
+				
+					<tr>
+						<td>17</td>
+						<td>worms</td>
+					</tr>
+					
+				
+					<tr>
+						<td>18</td>
+						<td>eiffel tower</td>
+					</tr>
+					
+				
+					<tr>
+						<td>19</td>
+						<td>tap</td>
+					</tr>
+					
+				
+					<tr>
+						<td>20</td>
+						<td>judge</td>
+					</tr>
+					
+				
+					<tr>
+						<td>21</td>
+						<td>statue-of-liberty</td>
+					</tr>
+					
+				
+					<tr>
+						<td>22</td>
+						<td>flight</td>
+					</tr>
+					
+				
+					<tr>
+						<td>23</td>
+						<td>nemo</td>
+					</tr>
+					
+				
+					<tr>
+						<td>24</td>
+						<td>arrow</td>
+					</tr>
+					
+				
+					<tr>
+						<td>25</td>
+						<td>nail</td>
+					</tr>
+					
+				
+					<tr>
+						<td>26</td>
+						<td>nose</td>
+					</tr>
+					
+				
+					<tr>
+						<td>27</td>
+						<td>knife</td>
+					</tr>
+					
+				
+					<tr>
+						<td>28</td>
+						<td>black</td>
+					</tr>
+					
+				
+					<tr>
+						<td>29</td>
+						<td>nip</td>
+					</tr>
+					
+				
+					<tr>
+						<td>30</td>
+						<td>donkey</td>
+					</tr>
+					
+				
+					<tr>
+						<td>31</td>
+						<td>mat</td>
+					</tr>
+					
+				
+					<tr>
+						<td>32</td>
+						<td>moon</td>
+					</tr>
+					
+				
+					<tr>
+						<td>33</td>
+						<td>helicopter</td>
+					</tr>
+					
+				
+					<tr>
+						<td>34</td>
+						<td>mike</td>
+					</tr>
+					
+				
+					<tr>
+						<td>35</td>
+						<td>chimp</td>
+					</tr>
+					
+				
+					<tr>
+						<td>36</td>
+						<td>maze</td>
+					</tr>
+					
+				
+					<tr>
+						<td>37</td>
+						<td>hulk</td>
+					</tr>
+					
+				
+					<tr>
+						<td>38</td>
+						<td>cloud</td>
+					</tr>
+					
+				
+					<tr>
+						<td>39</td>
+						<td>bomb</td>
+					</tr>
+					
+				
+					<tr>
+						<td>40</td>
+						<td>forest</td>
+					</tr>
+					
+				
+					<tr>
+						<td>41</td>
+						<td>dam</td>
+					</tr>
+					
+				
+					<tr>
+						<td>42</td>
+						<td>cane</td>
+					</tr>
+					
+				
+					<tr>
+						<td>43</td>
+						<td>cam</td>
+					</tr>
+					
+				
+					<tr>
+						<td>44</td>
+						<td>cake</td>
+					</tr>
+					
+				
+					<tr>
+						<td>45</td>
+						<td>coal</td>
+					</tr>
+					
+				
+					<tr>
+						<td>46</td>
+						<td>drum</td>
+					</tr>
+					
+				
+					<tr>
+						<td>47</td>
+						<td>cafe</td>
+					</tr>
+					
+				
+					<tr>
+						<td>48</td>
+						<td>cage</td>
+					</tr>
+					
+				
+					<tr>
+						<td>49</td>
+						<td>cow</td>
+					</tr>
+					
+				
+					<tr>
+						<td>50</td>
+						<td>thor</td>
+					</tr>
+					
+				
+					<tr>
+						<td>51</td>
+						<td>grass</td>
+					</tr>
+					
+				
+					<tr>
+						<td>52</td>
+						<td>cone-statue</td>
+					</tr>
+					
+				
+					<tr>
+						<td>53</td>
+						<td>lime</td>
+					</tr>
+					
+				
+					<tr>
+						<td>54</td>
+						<td>leak</td>
+					</tr>
+					
+				
+					<tr>
+						<td>55</td>
+						<td>laser</td>
+					</tr>
+					
+				
+					<tr>
+						<td>56</td>
+						<td>Lucifer</td>
+					</tr>
+					
+				
+					<tr>
+						<td>57</td>
+						<td>boulder</td>
+					</tr>
+					
+				
+					<tr>
+						<td>58</td>
+						<td>log</td>
+					</tr>
+					
+				
+					<tr>
+						<td>59</td>
+						<td>ship</td>
+					</tr>
+					
+				
+					<tr>
+						<td>60</td>
+						<td>shore</td>
+					</tr>
+					
+				
+					<tr>
+						<td>61</td>
+						<td>natalie-portman</td>
+					</tr>
+					
+				
+					<tr>
+						<td>62</td>
+						<td>sun</td>
+					</tr>
+					
+				
+					<tr>
+						<td>63</td>
+						<td>pit-hole</td>
+					</tr>
+					
+				
+					<tr>
+						<td>64</td>
+						<td>cyclone</td>
+					</tr>
+					
+				
+					<tr>
+						<td>65</td>
+						<td>jessica-jones</td>
+					</tr>
+					
+				
+					<tr>
+						<td>66</td>
+						<td>holmes</td>
+					</tr>
+					
+				
+					<tr>
+						<td>67</td>
+						<td>siren</td>
+					</tr>
+					
+				
+					<tr>
+						<td>68</td>
+						<td>wolverine</td>
+					</tr>
+					
+				
+					<tr>
+						<td>69</td>
+						<td>asteroid</td>
+					</tr>
+					
+				
+					<tr>
+						<td>70</td>
+						<td>fence</td>
+					</tr>
+					
+				
+					<tr>
+						<td>71</td>
+						<td>fort</td>
+					</tr>
+					
+				
+					<tr>
+						<td>72</td>
+						<td>fan</td>
+					</tr>
+					
+				
+					<tr>
+						<td>73</td>
+						<td>bubbles</td>
+					</tr>
+					
+				
+					<tr>
+						<td>74</td>
+						<td>gem</td>
+					</tr>
+					
+				
+					<tr>
+						<td>75</td>
+						<td>file</td>
+					</tr>
+					
+				
+					<tr>
+						<td>76</td>
+						<td>jam</td>
+					</tr>
+					
+				
+					<tr>
+						<td>77</td>
+						<td>injection</td>
+					</tr>
+					
+				
+					<tr>
+						<td>78</td>
+						<td>flash</td>
+					</tr>
+					
+				
+					<tr>
+						<td>79</td>
+						<td>milk</td>
+					</tr>
+					
+				
+					<tr>
+						<td>80</td>
+						<td>elephant</td>
+					</tr>
+					
+				
+					<tr>
+						<td>81</td>
+						<td>gate</td>
+					</tr>
+					
+				
+					<tr>
+						<td>82</td>
+						<td>gun</td>
+					</tr>
+					
+				
+					<tr>
+						<td>83</td>
+						<td>chewing-gum</td>
+					</tr>
+					
+				
+					<tr>
+						<td>84</td>
+						<td>sheldon</td>
+					</tr>
+					
+				
+					<tr>
+						<td>85</td>
+						<td>jail</td>
+					</tr>
+					
+				
+					<tr>
+						<td>86</td>
+						<td>burning-building</td>
+					</tr>
+					
+				
+					<tr>
+						<td>87</td>
+						<td>supergirl</td>
+					</tr>
+					
+				
+					<tr>
+						<td>88</td>
+						<td>spider-web</td>
+					</tr>
+					
+				
+					<tr>
+						<td>89</td>
+						<td>giraffe</td>
+					</tr>
+					
+				
+					<tr>
+						<td>90</td>
+						<td>shield</td>
+					</tr>
+					
+				
+					<tr>
+						<td>91</td>
+						<td>pot</td>
+					</tr>
+					
+				
+					<tr>
+						<td>92</td>
+						<td>flying-groom-stick</td>
+					</tr>
+					
+				
+					<tr>
+						<td>93</td>
+						<td>boom</td>
+					</tr>
+					
+				
+					<tr>
+						<td>94</td>
+						<td>peak</td>
+					</tr>
+					
+				
+					<tr>
+						<td>95</td>
+						<td>bus</td>
+					</tr>
+					
+				
+					<tr>
+						<td>96</td>
+						<td>whale</td>
+					</tr>
+					
+				
+					<tr>
+						<td>97</td>
+						<td>tesseract</td>
+					</tr>
+					
+				
+					<tr>
+						<td>98</td>
+						<td>keyboard</td>
+					</tr>
+					
+				
+					<tr>
+						<td>99</td>
+						<td>mouse</td>
+					</tr>
+					
+				
+					<tr>
+						<td>100</td>
+						<td>lion</td>
+					</tr>
+					
+				
+			</tbody>
+		</table>
+	</div>
+
+	<div class="date">
+		Written on April  8, 2020
+	</div>
+
+	
+
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+
+
+
+<a href="https://github.com/smvamsi96/bootkyll"><i class="svg-icon github"></i></a>
 
 
 
 
-<div class="col mb-4">
-<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title"></h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-</div>
-</div>
-<div class="col mb-4">
-<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Info card title</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-</div>
-</div>
-<div class="col mb-4">
-<div class="card bg-light mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Light card title</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-</div>
-</div>
-<div class="col mb-4">
-<div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-<div class="card-header"></div>
-<div class="card-body">
-<h5 class="card-title">Dark card title</h5>
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-</div>
-</div>
-</div>
-</div>
--->
+<a href="https://www.twitter.com/jekyllrb"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+	
+    
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  </body>
+</html>
